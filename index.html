@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        ROCK PAPER SCISSORS
+    </div>
+
+    <div class="main">
+
+        <div class="players">
+            <div class="player">
+                <div class="playerText">Player</div>
+                <div class="playerScore">0</div>
+            </div>
+                <div class="computer">
+                <div class="computerText">Computer</div>
+                <div class="computerScore">0</div> 
+            </div>  
+        </div>
+
+        <div class="choice">
+            <div class="optionText">Choose an option!</div>
+            <div class="hands">
+                <div class="rock hand"><img src="https://img.icons8.com/color/96/000000/hand-rock-skin-type-2.png" onclick="UserChoice('rock')"/></div>
+                <div class="paper hand"><img src="https://img.icons8.com/color/96/000000/hand-skin-type-2.png" onclick="UserChoice('paper')" /></div>
+                <div class="scissors hand"><img src="https://img.icons8.com/color/96/000000/hand-scissors-skin-type-2.png" onclick="UserChoice('scissors')" /></div>
+            </div>
+        </div>
+        
+        <div class="result">
+            <div class="finalChoice">
+                <div class="playerHand"><img id = "plChoice" src="https://img.icons8.com/color/96/000000/hand-scissors-skin-type-2.png"/></div>
+                <div class="textResult">YOU WON!</div>
+                <div class="cpHand"><img id = "cpChoice" src="https://img.icons8.com/color/96/000000/hand-skin-type-2.png"/></div>
+            </div>
+            <div class="finalText">Scissors beats paper!</div>
+            <div class="playAgain" onclick="restartGame()">Play Again!</div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
